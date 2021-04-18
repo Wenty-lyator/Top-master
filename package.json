@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "swiper": "^6.5.3",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.5"
+  },
+  "devDependencies": {
+    "sass": "^1.32.8",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "@vitejs/plugin-vue": "^1.1.5",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.5",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^7.7.0",
+    "postcss": "^8.2.8",
+    "prettier": "^2.2.1",
+    "vite": "^2.0.5"
+  }
+}

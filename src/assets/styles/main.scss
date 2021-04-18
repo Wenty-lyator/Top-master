@@ -1,0 +1,451 @@
+// fonts
+@font-face {
+	font-family: 'Gilory-ExtraBold';
+	font-display: swap;
+	src: url("../fonts/Gilroy-ExtraBold.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilory-Light';
+	font-display: swap;
+	src: url("../fonts/Gilroy-Light.otf");
+	font-weight: 300;
+	font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400&display=swap');
+
+
+
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.boddy {
+  flex: 1 0 auto;
+}
+
+body{
+  font-family: 'Gilory-Light';
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+
+
+
+
+.main {
+  &-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20vh 10px;
+    &-title {
+      max-width: 1000px;
+      font-family: Cormorant Unicase;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 58px;
+      text-align: center;
+      letter-spacing: -0.24px;
+      color: #FFFFFF;
+    }
+    &-text {
+      max-width: 1000px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 29px;
+      text-align: center;
+      letter-spacing: -0.24px;
+      color: #FFFFFF;
+    }
+  }
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    height: 50px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.24px;
+    color: #fff;
+    background-color: #D35400;
+    border: none;
+    border-radius: 76px;
+    margin: 30px auto;
+    padding: 20px 40px;
+    outline: 0;
+    transition: all .4s;
+    &:hover {
+      box-shadow: 0px 24px 44px rgba(211, 84, 0, 0.25);
+    }
+  }
+  &-services {
+    padding: 50px 0;
+    margin: 50px 0;
+    &-redecorating {
+      background-image: url('../images/main/redecorating.jpg');
+    }
+    &-overhaul {
+      background-image: url('../images/main/overhaul.jpg');
+    }
+    &-renovation {
+      background-image: url('../images/main/renovation.jpg');
+    }
+    &-plumber {
+      background-image: url('../images/main/plumber.jpg');
+    }
+    &-electrician {
+      background-image: url('../images/main/electrician.jpg');
+    }
+    &-carpetner {
+      background-image: url('../images/main/carpetner.jpg');
+    }
+    &-title {
+      max-width: 80%;
+      margin: 25px auto;
+      font-family: Cormorant Unicase;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 58px;
+      text-align: center;
+      letter-spacing: -0.24px;
+      color: #000000;
+    }
+    &-items {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr 1fr;
+      grid-gap: 15px;
+    }
+    &-item {
+      width: 370px;
+      height: 250px;
+      border-radius: 6px;
+      margin: 5px auto;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      cursor: pointer;
+      &-title {
+        background-color: #D35400;
+        padding: 1px 15px 25px 50px;
+        position: relative;
+        top: 175px;
+        transition: all .3s;
+        &:hover {
+          top: 140px;
+        }
+      }
+      &-subtitle {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: -0.24px;
+        color: #FFFFFF;
+        margin: 25px 0 20px 0; 
+      }
+      &-subtext {
+        margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: -0.24px;
+        color: #FFFFFF;
+      }
+    }
+  }
+  &-about {
+    background-image: url('../images/main/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    &-title {
+      font-family: Cormorant Unicase;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: -0.24px;
+      color: #FFFFFF;
+      margin: 0 0 25px 0;
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin-right: 40px;
+    }
+    &-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &-text {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 143.8%;
+      letter-spacing: -0.24px;
+      color: #FFFFFF;
+      margin: 10px 0;
+    }
+    &-slider {
+      max-width: 50%;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+  }
+  &-advantage {
+    margin: 50px 0;
+    padding: 50px 0;
+    &-items {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr 1fr;
+      grid-gap: 15px;
+    }
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+      &-icon {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background-color: #D35400;
+      }
+      &-img {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+    }
+    &-info {
+      width: 210px;
+      margin-left: 40px;
+      &-title {
+        font-family: 'Gilory-ExtraBold';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.24px;
+        color: #000000;
+        margin: 5px 0;
+      }
+    }
+  }
+  &-portfolio {
+    padding: 30px 0 80px 0;
+    &-slider {
+      max-width: 850px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 15px;
+      padding: 0 25px;
+    }
+  }
+  &-ques {
+    position: relative;
+    top: -125px;
+    max-width: 1170px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 29px rgba(0, 0, 0, 0.25);
+    border-radius: 18%;
+    padding: 70px 15px;
+    &-text {
+      display: flex;
+      max-width: 1075px;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 37px;
+      text-align: center;
+      margin: 0 auto;
+      letter-spacing: -0.24px;
+      color: #3F3F3F;
+    }
+  }
+  &-pros {
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
+    &-title {
+      font-family: Cormorant Unicase;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 58px;
+      text-align: left;
+      letter-spacing: -0.24px;
+      color: #000000;
+    }
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 15px 0;
+    }
+    &-num {
+      width: 30px;
+      height: 30px;
+      background-color: #D35400;
+      border-radius: 100%;
+      margin-right: 55px;
+      &-text {
+        position: relative;
+        left: 10px;
+        font-family: Cormorant Unicase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: -0.24px;
+        color: #FFFFFF;
+      }
+    }
+    &-point {
+      max-width: 65%;
+    }
+  }
+}
+
+.header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-main {
+    background-image: url('../images/main/header.jpg');
+  }
+  &-overhaul {
+    background-image: url('../images/overhaul/header.jpg');
+  }
+  &-plumber {
+    background-image: url('../images/plumber/header.jpg');
+  }
+  &-plumbing {
+    background-image: url('../images/plumbing/header.jpg');
+  }
+  &-redecorating {
+    background-image: url('../images/redecorating/header.jpg');
+  }
+  &-renovation {
+    background-image: url('../images/renovation/header.jpg');
+  }
+  &-carpetner {
+    background-image: url('../images/carpetner/header.jpg');
+  }
+}
+
+.sub-header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-main {
+    background-image: url('../images/main/subheader.jpg');
+    padding-bottom: 250px;
+  }
+  &-renovation {
+    background-image: url('../images/renovation/subheader.jpg');
+  }
+  &-redecorating {
+    background-image: url('../images/redecorating/subheader.jpg');
+  }
+  &-plumbing {
+    background-image: url('../images/plumbing/subheader.jpg');
+  }
+  &-plumber {
+    background-image: url('../images/plumber/subheader.jpg');
+  }
+  &-overhaul {
+    background-image: url('../images/overhaul/subheader.jpg');
+  }
+  &-carpetner {
+    background-image: url('../images/carpetner/subheader.jpg');
+  }
+}
+
+
+.submenu {
+  &-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    background-color: #fff;
+    border: 1px solid #D35400;
+    border-radius: 5px;
+    z-index: 999;
+  }
+  &-btn {
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-header-title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .main-header-text {
+    font-size: 18px;
+  }
+  .main-about-content {
+    flex-direction: column;
+  }
+  .main-about-title {
+    text-align: center;
+  }
+  .main-about-info, .main-about-slider {
+    max-width: 90%;
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 600px) {
+  .main-services-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .main-header-title {
+    font-size: 27px;
+  }
+  .main-header-text {
+    font-size: 14px;
+  }
+}
